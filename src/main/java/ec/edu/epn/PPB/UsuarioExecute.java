@@ -7,7 +7,7 @@ public class UsuarioExecute {
 
         Usuario user = new Usuario();
         String cedula1 = "1726503103";
-        String cedula2 = "1708171777";
+        String cedula2 = "1788171777";
 
         if (user.isEcuadorianDocumentValid(cedula1)) {
             System.out.println("**Documento Valido -> " + cedula1);
