@@ -13,6 +13,7 @@ public class Usuario {
     private String cedula;
     private String nombreUsuario;
     private String contrasena;
+    private String membresia;
 
     public Usuario() {
     }
@@ -25,6 +26,39 @@ public class Usuario {
         this.cedula = cedula;
         this.nombreUsuario = nombreUsuario;
         this.contrasena = contrasena;
+    }
+
+    public Usuario(String nmUsuario, String contrasena){
+        this.nombreUsuario = nmUsuario;
+        this.contrasena = contrasena;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public String getNombreUsuario() {
+        return nombreUsuario;
+    }
+
+    public String getContrasena() {
+        return contrasena;
     }
 
     public int validarDatos() {
@@ -43,9 +77,7 @@ public class Usuario {
         return 1;
     }
 
-
-
-    public boolean isEcuadorianDocumentValid(String document) {
+    private boolean isEcuadorianDocumentValid(String document) {
         byte sum = 0;
         try {
             if (document.trim().length() != 10)
