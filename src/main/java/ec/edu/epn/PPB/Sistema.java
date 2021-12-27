@@ -24,6 +24,7 @@ public class Sistema {
     }
 
     public int login(Usuario user, String nmUsuario, String contrasena){
+        //refactor segunda historia de usuario
         boolean usuario = nmUsuario.equals(user.getNombreUsuario());
         boolean pass = contrasena.equals(user.getContrasena());
         if(usuario && pass)
