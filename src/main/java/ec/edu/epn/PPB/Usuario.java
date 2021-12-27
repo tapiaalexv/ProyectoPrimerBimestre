@@ -77,7 +77,7 @@ public class Usuario {
         return 1;
     }
 
-    private boolean isEcuadorianDocumentValid(String document) {
+    public boolean isEcuadorianDocumentValid(String document) {
         byte sum = 0;
         try {
             if (document.trim().length() != 10)
